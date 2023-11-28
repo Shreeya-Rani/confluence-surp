@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Coachella</title>
+    <link href='https://fonts.googleapis.com/css?family=Outfit&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="navigation">
+        <div class="logo">
+            <h1><span>Coachella</span></h1>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="about.html">About</a></li>
+              <li><a href="timeline.html">Timeline</a></li>
+              <li><a href="map.html">Map</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+  
+        <nav class="mobile-nav">
+            <ul id="sidemenu">
+              <li><a href="index.html" onclick="closemenu()">Home</a></li>
+              <li class="active"><a href="about.html" onclick="closemenu()">About</a></li>
+              <li><a href="timeline.html" onclick="closemenu()">Timeline</a></li>
+              <li><a href="map.html" onclick="closemenu()">Map</a></li>
+              <li><a href="contact.html" onclick="closemenu()">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+    <h1 class="main1">About</h1>
+    <p class="para">Coachella - Coachella Valley Music and Arts Festival is a exhilirating music fest featuring top artists and performers from all over the world. More than one lakh people attend our fest every year and more than fifty top artists like Alan Walker, Imagine Dragons, etc grace this occasion.
+</p>
+
+      
+
+
+
+    
+</body>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+  
+    function openmenu(){
+        sidemenu.style.right = "0px";
+    }
+  
+    function closemenu(){
+        sidemenu.style.right = "-300px";
+    }
+  </script>
+</html>

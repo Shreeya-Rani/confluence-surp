@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Coachella</title>
+    <link href='https://fonts.googleapis.com/css?family=Outfit&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="navigation">
+        <div class="logo">
+            <h1><span>Coachella</span></h1>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li class="active"><a href="timeline.html">Timeline</a></li>
+              <li><a href="map.html">Map</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+  
+        <nav class="mobile-nav">
+            <ul id="sidemenu">
+              <li class="active"><a href="index.html" onclick="closemenu()">Home</a></li>
+              <li><a href="about.html" onclick="closemenu()">About</a></li>
+              <li><a href="timeline.html" onclick="closemenu()">Timeline</a></li>
+              <li><a href="map.html" onclick="closemenu()">Map</a></li>
+              <li><a href="contact.html" onclick="closemenu()">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+    <h1 class="main1">Timeline</h1>
+    <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, porro commodi quo laborum asperiores optio deserunt officiis libero nisi architecto accusamus, et cupiditate repellendus. Harum, quo exercitationem. Tempora, fugit odio.
+    Deleniti magni ex impedit sint, officiis illo. Ad odit ipsa error, eligendi dolorum explicabo perspiciatis. Laboriosam architecto error tempore ullam, natus, quaerat accusantium labore ipsum voluptatum odio mollitia corrupti expedita.
+    In soluta, excepturi mollitia nemo voluptatibus officia cupiditate ipsum tempore vel quidem reprehenderit labore vero repudiandae expedita blanditiis itaque iste totam molestiae inventore! Officia veritatis odio recusandae, amet itaque culpa.
+    Officiis vitae vero ullam doloribus pariatur repellat vel reiciendis, nihil totam voluptate eum nemo nisi architecto tempore facere quas unde quibusdam laboriosam? Ut iusto provident sint qui nisi ullam delectus?
+    A minus voluptatem temporibus nam modi sequi harum dicta incidunt impedit odio! Non facere pariatur dolorem dicta rerum? Nostrum animi repellendus ipsa porro ullam temporibus eaque illum possimus unde minima.</p>
+
+
+      
+
+
+
+    
+</body>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+  
+    function openmenu(){
+        sidemenu.style.right = "0px";
+    }
+  
+    function closemenu(){
+        sidemenu.style.right = "-300px";
+    }
+  </script>
+</html>
